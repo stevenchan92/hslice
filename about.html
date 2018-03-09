@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Homeslice | A New Way To Consume Culture</title>
+    <meta name="description" content="Homeslice, A New Way To Consume Culture">
+    <!-- <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png"> -->
+    <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- overrides -->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+    <style>
+        #banner, #contact {
+            position: relative;
+        }
+        .banner-bg {
+            background: url(img/hero_bg_1.jpg) no-repeat;
+            background-position: top center;
+            background-size: cover;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 0;
+        }
+        .contact-bg {
+            background: url(img/hero_bg_4.jpg) no-repeat;
+            background-position: top center;
+            background-size: cover;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 0;
+        }
+        .banner-bg:after, .contact-bg:after {
+            background: #192440;
+            content: '';
+            height: 100%;
+            opacity: .8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .logo {
+            display: inline-block;
+            color: #FFA33A;
+            font-family: 'Sacramento', cursive;
+            font-size: 50px;
+            font-weight: 500;
+        }
+        .feature img {
+            border: 5px solid #192440;
+        }
+        .mx-auto--cards {
+          margin-bottom: 2rem;
+        }
+        .atlas-cta {
+          border-radius: 22px 0 !important; 
+        }
+        .atlas-cta:hover {
+          border-radius: 22px !important; 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background:#ffffff;">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-3">
+                        <!-- <img style="display: inline-block;" src="img/logo.png" alt="logo"> -->
+                        <span class="logo">Homeslice</span>
+                    </div>
+                    <div class="col-6 align-self-center text-right">
+                    </div>
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5" style="color:#292b2c !important;">
+                Dear Valued Customer,
+            </h1>
+        </div>
+    </div>
+    <!-- three-blcok -->
+    <div class="container my-5 py-2">
+        <h2 class="text-left font-weight-bold my-5">Unforgettable meals, enduring traditions. This is our Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</h2>
+        <h2 class="text-left font-weight-bold my-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat.</h2><br><br>
+        <h2 class="text-right font-weight-bold my-5">Sincerely,<br><br><span style="font-family: 'Sacramento', cursive;">Mr. Bones & Mr. Silk</span></h2>
+    </div>
+
+
+    <!-- contact -->
+    <div class="jumbotron jumbotron-fluid" id="contact">
+        <div class="contact-bg"></div>
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white">
+                    <h2 class="font-weight-bold">Contact Us</h2>
+                    <p class="my-4">
+                        Te iisque labitur eos, nec sale argumentum scribentur,
+                        <br> augue disputando in vim. Erat fugit sit at, ius lorem.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>Email : hello@homeslice.com</li>
+                        <!-- <li>Phone : 361-688-5824</li>  -->
+                        <li>Address : 965 Mission St, San Francisco, CA 94103</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <!-- <form>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Your Name</label>
+                                <input type="name" class="form-control" id="name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Email">Your Email</label>
+                                <input type="email" class="form-control" id="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2018 Homeslice Inc.
+                </div>
+                <!-- <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="#" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+</body>
+
+</html>
