@@ -34,14 +34,14 @@ button {
     width: 100%;
 }
 
-.cta-green {
-    background: #00FFAD;
-    color: #192440;
+.cta-orange {
+    background:#FFA33A;
+    color: #ffffff;
 }
 
-.cta-green:hover {
+.cta-orange:hover {
     color: #ffffff;
-    background: #00e69c;
+    background: #cc8231;
 }
 
 .cta-blue {
@@ -62,6 +62,16 @@ button {
 .cta-ghost:hover {
     color: #ffffff;
     background: #121a2e;
+}
+
+.cta-ghost--orange {
+    border: 2px solid #FFA33A !important;
+    color: #FFA33A;
+}
+
+.cta-ghost--orange:hover {
+    color: #ffffff;
+    background: #FFA33A;
 }
 
 #banner {

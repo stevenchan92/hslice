@@ -16,12 +16,14 @@
     <!-- AOS -->
     <link rel="stylesheet" href="css/aos.css">
     <!-- overrides -->
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
     <style>
         #banner, #contact {
             position: relative;
         }
         .banner-bg {
-            background: url(img/simple-dinner.jpg) no-repeat;
+            background: url(img/hero_bg_1.jpg) no-repeat;
             background-position: top center;
             background-size: cover;
             height: 100%;
@@ -32,7 +34,7 @@
             z-index: 0;
         }
         .contact-bg {
-            background: url(img/dinner-table.jpg) no-repeat;
+            background: url(img/hero_bg_4.jpg) no-repeat;
             background-position: top center;
             background-size: cover;
             height: 100%;
@@ -46,7 +48,7 @@
             background: #192440;
             content: '';
             height: 100%;
-            opacity: .5;
+            opacity: .8;
             position: absolute;
             top: 0;
             left: 0;
@@ -54,19 +56,64 @@
             z-index: 1;
         }
         .logo {
-            display: none;
-        }
-        @media (min-width:1000px) {
-            .logo {
-                display: inline-block;
-                color: #fff;
-                text-transform: uppercase;
-                font-weight: bold;
-                letter-spacing: 2px;
-            }
+            display: inline-block;
+            color: #FFA33A;
+            font-family: 'Sacramento', cursive;
+            font-size: 50px;
+            font-weight: 500;
         }
         .feature img {
             border: 5px solid #192440;
+        }
+        .mx-auto--cards {
+          margin-bottom: 2rem;
+        }
+        .atlas-cta {
+          border-radius: 22px 0 !important; 
+        }
+        .atlas-cta:hover {
+          border-radius: 22px !important; 
+        }
+        .gallery-box img {
+          max-width: 292px;
+          max-height: 267px;
+          margin: 0 auto;
+          display: block;
+        }
+        .gallery-box--text {
+          padding: 45px 0;
+          text-align: left !important;
+          max-width: 267px;
+          margin: 0 auto;
+          font-size: 15px;
+        } 
+        .hide-on-md {
+          display: none;
+        }
+        .show-on-md {
+          display: block;
+        }
+        @media (min-width:1000px) {
+          .gallery-box {
+            padding: 0;
+            height: 267px;
+            width: 292px;
+          }
+          .gallery-box img {
+            width: 100%;
+            height: 100%;
+          }
+          .gallery-box--text {
+            padding: 45px;
+            font-size: 15px;
+            text-align: center !important;
+          } 
+          .hide-on-md {
+            display: block;
+          }
+          .show-on-md {
+            display: none;
+          }
         }
     </style>
 </head>
@@ -79,11 +126,11 @@
             <header>
                 <div class="row justify-content-between">
                     <div class="col-3">
-                        <img style="display: inline-block;" src="img/logo.png" alt="logo">
+                        <!-- <img style="display: inline-block;" src="img/logo.png" alt="logo"> -->
                         <span class="logo">Homeslice</span>
                     </div>
                     <div class="col-6 align-self-center text-right">
-                        <a href="#" class="text-white lead">Get Early Access</a>
+                        <a href="./about.html" class="text-white lead">About</a>
                     </div>
                 </div>
             </header>
@@ -95,31 +142,77 @@
                 Homeslice is an Asian mealkit service.  
                 <br>We deliver the same authentic dishes your parents made.
             </p>
-            <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a>
+            <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-orange">Get Started</a>
         </div>
     </div>
     <!-- three-blcok -->
     <div class="container my-5 py-2">
         <h2 class="text-center font-weight-bold my-5">Unforgettable meals, enduring traditions</h2>
         <div class="row">
-            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <img src="img/smart-protect-1.jpg" alt="Culture Cards" class="mx-auto">
+            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-4">
+                <img src="img/hero_bg_2.jpg" alt="Culture Cards" class="mx-auto mx-auto--cards">
                 <h4>Convenient</h4>
                 <p>No more speciality Asian supermarket runs. We gather and prep everything you need.</p>
             </div>
-            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <img src="img/smart-protect-2.jpg" alt="Fresh & Easy" class="mx-auto">
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4">
+                <img src="img/hero_bg_3.jpg" alt="Fresh & Easy" class="mx-auto mx-auto--cards">
                 <h4>Fast & Easy</h4>
                 <p>From box to plate, everything cooks in under 30 minutes and takes less than 5 steps.</p>
             </div>
-            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <img src="img/smart-protect-3.jpg" alt="Quality Research" class="mx-auto">
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-4">
+                <img src="img/hero_bg_5.jpg" alt="Quality Research" class="mx-auto mx-auto--cards">
                 <h4>Authenthic</h4>
                 <p>We gather recipes from the most authenthic source: parents and grandparents.</p>
             </div>
         </div>
     </div>
    
+
+    <!-- three-blcok -->
+    <div class="container my-5 py-2">
+        <h2 class="text-center font-weight-bold my-5">Reviews</h2>
+        <div class="row">
+            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 col-md-6 col-lg-3 text-center gallery-box">
+                <img src="img/img_square_1.jpg" alt="Culture Cards" class="mx-auto">
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 col-md-6 col-lg-3 text-center gallery-box gallery-box--text">
+                <h4>James Robert</h4>
+                <i>&ldquo;From box to plate, everything cooks in under 30 minutes and takes less than 5 steps.&ldquo;</i>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 col-md-6 col-lg-3 text-center gallery-box">
+                <img src="img/img_square_2.jpg" alt="Quality Research" class="mx-auto">
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 col-md-6 col-lg-3 text-center gallery-box gallery-box--text">
+                <h4>Kip Hugh</h4>
+                <i>&ldquo;We gather recipes from the most authenthic source: parents and grandparents.&ldquo;</i>
+            </div>
+        </div>
+        <div class="row">
+            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 col-md-6 col-lg-3 text-center gallery-box gallery-box--text hide-on-md">
+                <h4>Sydney Meyers</h4>
+                <i>&ldquo;No more speciality Asian supermarket runs. We gather and prep everything you need.&ldquo;</i>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 col-md-6 col-lg-3 text-center gallery-box">
+                <img src="img/img_square_4.jpg" alt="Fresh & Easy" class="mx-auto">
+            </div>
+            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 col-md-6 col-lg-3 text-center gallery-box gallery-box--text show-on-md">
+                <h4>Sydney Meyers</h4>
+                <i>&ldquo;No more speciality Asian supermarket runs. We gather and prep everything you need.&ldquo;</i>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 col-md-6 col-lg-3 text-center gallery-box gallery-box--text hide-on-md">
+                <h4>Lentie Ward</h4>
+                <i>&ldquo;We gather recipes from the most authenthic source: parents and grandparents.&ldquo;</i>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 col-md-6 col-lg-3 text-center gallery-box">
+                <img src="img/img_square_5.jpg" alt="Quality Research" class="mx-auto">
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-sm-12 col-md-6 col-lg-3 text-center gallery-box gallery-box--text show-on-md">
+                <h4>Lentie Ward</h4>
+                <i>&ldquo;We gather recipes from the most authenthic source: parents and grandparents.&ldquo;</i>
+            </div>
+        </div>
+    </div>
+
     <!-- feature (skew background) 
         
         ^let's kill the skew and add a user review section. We can make up the reviews. 
@@ -129,7 +222,7 @@
         temp placeholders/images for now --> 
 
 
-    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+    <!-- <div class="jumbotron jumbotron-fluid feature" id="feature-first">
         <div class="container my-5">
             <div class="row justify-content-between text-center text-md-left">
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
@@ -143,9 +236,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- feature (green background) -->
-    <div class="jumbotron jumbotron-fluid feature" id="feature-last">
+    <!-- <div class="jumbotron jumbotron-fluid feature" id="feature-last">
         <div class="container">
             <div class="row justify-content-between text-center text-md-left">
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
@@ -161,13 +254,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- price table -->
     <div class="container my-5 py-2" id="price-table">
         <h2 class="text-center font-weight-bold d-block mb-3">PLANS</h2>
         <div class="row">
-            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
+            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-2 text-center py-4 mt-5">
+            </div>
+            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5" style="background:#FFA338;border-radius: 40px 0;">
                 <h4 class="my-4">FOR INDIVIDUALS</h4>
                 <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">50</span> / WEEK</p>
                 <ul class="list-unstyled">
@@ -177,7 +272,7 @@
                 </ul>
                 <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Order Today</a>
             </div>
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium" style="border-radius: 40px 0;">
                 <h4 class="my-4">FOR FAMILES</h4>
                 <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">120</span> / WEEK</p>
                 <ul class="list-unstyled">
@@ -185,7 +280,7 @@
                     <li>Serves 4 Per Set</li>
                     <li>Free Delivery</li>
                 </ul>
-                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-green">Order Today</a>
+                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost--orange">Order Today</a>
             </div>
             
             <!-- we're only going to have two pricing tiers to start off with. 
@@ -242,7 +337,7 @@
                     </p>
                     <ul class="list-unstyled">
                         <li>Email : hello@homeslice.com</li>
-                        <li>Phone : 361-688-5824</li>
+                        <!-- <li>Phone : 361-688-5824</li>  -->
                         <li>Address : 965 Mission St, San Francisco, CA 94103</li>
                     </ul>
                 </div>
