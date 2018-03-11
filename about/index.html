@@ -7,14 +7,14 @@
     <meta name="description" content="Homeslice, A New Way To Consume Culture">
     <!-- <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png"> -->
     <!-- custom.css -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="../css/custom.css">
     <!-- bootstrap.min.css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- font-awesome -->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     
     <!-- AOS -->
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="../css/aos.css">
     <!-- overrides -->
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
@@ -34,7 +34,7 @@
             z-index: 0;
         }
         .contact-bg {
-            background: url(img/hero_bg_4.jpg) no-repeat;
+            background: url(../img/hero_bg_4.jpg) no-repeat;
             background-position: top center;
             background-size: cover;
             height: 100%;
@@ -62,6 +62,12 @@
             font-size: 50px;
             font-weight: 500;
         }
+        .logo a {
+            color: #FFA33A;
+        }
+        .logo a:hover {
+            text-decoration: none;
+        }
         .feature img {
             border: 5px solid #192440;
         }
@@ -79,13 +85,13 @@
 
 <body>
     <!-- banner -->
-    <div class="jumbotron jumbotron-fluid" id="banner" style="background:#ffffff;">
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background:#ffffff;padding-bottom:0;">
         <div class="container text-center text-md-left">
             <header>
                 <div class="row justify-content-between">
                     <div class="col-3">
                         <!-- <img style="display: inline-block;" src="img/logo.png" alt="logo"> -->
-                        <span class="logo">Homeslice</span>
+                        <span class="logo"><a href="../index.html">Homeslice</a></span>
                     </div>
                     <div class="col-6 align-self-center text-right">
                     </div>
@@ -98,27 +104,26 @@
     </div>
     <!-- three-blcok -->
     <div class="container my-5 py-2">
-        <h2 class="text-left font-weight-bold my-5">Unforgettable meals, enduring traditions. This is our Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</h2>
-        <h2 class="text-left font-weight-bold my-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat.</h2><br><br>
-        <h2 class="text-right font-weight-bold my-5">Sincerely,<br><br><span style="font-family: 'Sacramento', cursive;">Mr. Bones & Mr. Silk</span></h2>
+        <h2 class="text-left my-5">Unforgettable meals, enduring traditions. This is our Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</h2>
+        <h2 class="text-left my-5">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat.</h2><br><br>
+        <h2 class="text-right my-5">Sincerely,<br><br><span style="font-family: 'Sacramento', cursive;">Mr. Bones & Mr. Silk</span></h2>
     </div>
 
 
     <!-- contact -->
-    <div class="jumbotron jumbotron-fluid" id="contact">
+    <div class="jumbotron jumbotron-fluid" id="contact" style="padding-bottom:0;">
         <div class="contact-bg"></div>
-        <div class="container my-5">
+        <div class="container my-5" style="margin-bottom:0 !important;">
             <div class="row justify-content-between">
                 <div class="col-md-6 text-white">
                     <h2 class="font-weight-bold">Contact Us</h2>
-                    <p class="my-4">
-                        Te iisque labitur eos, nec sale argumentum scribentur,
-                        <br> augue disputando in vim. Erat fugit sit at, ius lorem.
-                    </p>
+                    
+                    <!-- <p class="my-4">
+                    </p> -->
                     <ul class="list-unstyled">
-                        <li>Email : hello@homeslice.com</li>
+                        <li><a style="color:#ffffff;" href="mailto:hello@homeslice.com">hello@homeslice.com</a></li>
                         <!-- <li>Phone : 361-688-5824</li>  -->
-                        <li>Address : 965 Mission St, San Francisco, CA 94103</li>
+                        <li>San Francisco, CA</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
@@ -140,37 +145,15 @@
                         <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>
                     </form> -->
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- copyright -->
-    <div class="jumbotron jumbotron-fluid" id="copyright">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                <div class="col-md-12 text-white align-self-center text-center text-md-left my-2" style="margin:100px 0 50px !important;">
                     Copyright © 2018 Homeslice Inc.
                 </div>
-                <!-- <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
-                    <a href="#" class="d-inline-block text-center ml-2">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="d-inline-block text-center ml-2">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="d-inline-block text-center ml-2">
-                        <i class="fa fa-medium" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="d-inline-block text-center ml-2">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                </div> -->
             </div>
         </div>
     </div>
     
     <!-- AOS -->
-    <script src="js/aos.js"></script>
+    <script src="../js/aos.js"></script>
     <script>
       AOS.init({
       });
